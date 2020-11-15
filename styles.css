@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --main: #faf2e8;
+    --main-text: #383836;
+    --link-hover: #6d6d69;
+    --footer: #2e2b27;
+    --footer-text: #d3d3d3;
+    --footer-bottom: #141311;
+    --footer-bottom-text: #686868;
+}
+
+body {
+    background-color: var(--main);
+}
+
+li, a, button, #info, #products {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--main-text);
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 3%;
+    background-color: var(--main);
+    min-height: 8vh;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 2px 4px black;
+}
+
+.header-title {
+    color: var(--main-text);
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.header-title span {
+    color: #f3cd8c;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease;
+    border-bottom-style: solid;
+    border-width: 2.5px;
+    border-color: var(--main);
+}
+
+.nav-links li a:hover {
+    color: var(--link-hover);
+    border-bottom-style: solid;
+    border-width: 2.5px;
+    border-color: var(--link-hover);
+    margin: 0px 10px;
+}
+
+button {
+    padding: 2px 15px;
+    background-color: var(--main-text);
+    border-style: solid;
+    border-color: var(--main-text);
+    color: var(--main);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: var(--main);
+    color: var(--main-text);
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    height: 3px;
+    width: 25px;
+    background-color: var(--main-text);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+#first-pic-container {
+    background-image: url(pics/oxfordshire-ped.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+    padding: 10%;
+    text-shadow: 4px 4px 8px black;
+    color: white;
+}
+
+#pic-text {
+    padding-top: 40px;
+}
+
+#info-box, #products {
+    text-align: center;
+    margin: 30px;
+}
+
+h1, h2 {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-size: 38px;
+    color: var(--main-text);
+    margin: 10px auto;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+#info-box {
+    background-color: #faeacf;
+    border-top: 5px #f3cd8c solid;
+}
+
+#info {
+    max-width: 1000px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+#info p {
+    margin: 10px;
+}
+
+#products {
+    margin: 40px auto;
+    background-color: var(--main);
+    max-width: 1200px;
+}
+
+#product-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px;
+    grid-column-gap: 30px;
+    text-align: left;
+    margin: 30px;
+}
+
+#product-grid div {
+    margin: auto;
+    border-left: 4px var(--footer-bottom-text) solid;
+    padding: 10px;
+}
+
+.product-sub {
+    color: var(--footer-bottom-text);
+    font-weight: 100;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.available {
+    margin-top: 10px;
+}
+
+.product-pic {
+    margin: auto 30px auto auto;
+    height: 80%;
+    width: 300px;
+    max-width: 400px;
+    box-shadow: 4px 4px 8px black;
+}
+
+.footer {
+    background-color: var(--footer);
+    color: var(--footer-text);
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+    height: auto;
+    position: relative;
+}
+
+.footer-title {
+    color: var(--footer-text);
+    font-size: 26px;
+    border-bottom: 2px var(--footer-text) solid;
+}
+
+.footer-content {
+    height: 350px;
+    display: flex;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 25px;
+    text-align: left;
+}
+
+.footer-section .contact p,
+.footer-section .contact a {
+    padding: 10px 0px;
+    color: var(--footer-text);
+}
+
+.links a {
+    width: 90px;
+    margin-bottom: 10px;
+    display: block;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    color: white;
+    margin-left: 10px;
+}
+
+.links li {
+    color: var(--footer-text);
+    list-style: none;
+    font-size: 1.2em;
+}
+
+.contact-input {
+    width: 100%;
+    background-color: #141311;
+    color: var(--footer-text);
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    line-height: 2em;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s;
+}
+
+.contact-input:focus {
+    color: var(--footer);
+    background-color: var(--main);
+}
+
+.footer-section form button {
+    float: right;
+}
+
+.legal-container {
+    margin-top: -60px;
+    padding-bottom: 50px;
+}
+
+.legal {
+    font-size: 14px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.footer-bottom {
+    background-color: var(--footer-bottom);
+    color: var(--footer-bottom-text);
+    height : 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 10px;
+}
+
+.footer-bottom a {
+    color: var(--footer-bottom-text);
+    transition: 0.3s;
+}
+
+.footer-bottom a:hover {
+    color: white;
+}
+
+@media only screen and (max-width: 915px) {
+    .header-title {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    #product-grid {
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 300px 200px 300px 200px 300px 200px 300px 200px 300px 200px 300px;
+    }
+    #product-grid div {
+        margin: auto;
+        text-align: center;
+        border-top: 4px var(--footer-bottom-text) solid;
+        border-left: none;
+    }
+    .product-pic {
+        margin: auto;
+        height: 90%;
+        width: auto;
+    }
+    .footer {
+        height: auto;
+    }
+    .footer-content {
+        height: auto;
+        flex-direction: column;
+    }
+    .footer-section {
+        padding: 10px;
+    }
+    .contact-form {
+        padding-bottom: 30px;
+    }
+    .footer-section form button {
+        width: 100%;
+    }
+    .legal-container {
+        margin-top: 0px;
+    }
+    .legal {
+        font-size: 14px;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+}
+
+/* 690 PIXELS IS THE MIN THAT NAVBAR WORKS */
+@media only screen and (max-width: 690px) {
+    body {
+        overflow-x: hidden;
+    }
+    .header-title {
+        display: block;
+    }
+    .nav-links {
+        position: absolute; 
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: var(--main);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 40%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        box-shadow: 2px 2px 2px black;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .nav-links li a {
+        padding: 5px;
+    }
+    .burger {
+        display: block;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px,-6px);
+}
