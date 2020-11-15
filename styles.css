@@ -304,7 +304,7 @@ h3 {
     color: white;
 }
 
-.contact-container {
+.contact-container, .about-container {
     text-align: center;
     padding: 80px 0px;
     font-family: "Kanit", sans-serif;
@@ -361,6 +361,51 @@ h3 {
     background-size: cover;
 }
 
+
+.about, .wood {
+    display: flex;
+    text-align: left;
+    margin: 0px 30px;
+}
+
+.about {
+    align-items: center;
+}
+
+.wood {
+    align-items: flex-start;
+}
+
+.about div,
+.wood div {
+    width: 50%;
+}
+
+.about-text p,
+.wood-text p {
+    padding: 10px;
+    border-left: 4px solid var(--main-text);
+}
+
+.about-image-container {
+    padding: 10px
+}
+
+.about img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.wood h2 {
+    font-size: 28px;
+}
+
+.about-text,
+.wood-text {
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
 @media only screen and (max-width: 1000px) {
     .contact-container {
         height: auto;
@@ -384,6 +429,19 @@ h3 {
 @media only screen and (max-width: 915px) {
     .header-title {
         display: none;
+    }
+    .about {
+        flex-direction: column-reverse;
+    }
+    .about div {
+        width: 80%;
+    }
+    .wood {
+        flex-direction: column;
+        align-items: center;
+    }
+    .wood div {
+        width: 80%;
     }
 }
 
