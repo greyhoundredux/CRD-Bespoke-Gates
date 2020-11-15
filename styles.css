@@ -219,10 +219,16 @@ h3 {
     text-align: left;
 }
 
-.footer-section .contact p,
+
 .footer-section .contact a {
-    padding: 10px 0px;
+    margin: 20px 0px;
     color: var(--footer-text);
+    transition: all 0.3s ease;
+}
+
+.footer-section .contact a:hover {
+    margin-left: 10px;
+    color: white;
 }
 
 .links a {
@@ -296,6 +302,83 @@ h3 {
 
 .footer-bottom a:hover {
     color: white;
+}
+
+.contact-container {
+    text-align: center;
+    padding: 80px 0px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--main-text);
+}
+
+#contact-sub {
+    font-family: "Kanit", sans-serif;
+    color: var(--footer-bottom-text);
+    font-size: 20px;
+    font-style: italic;
+}
+
+.contact-content {
+    display: flex;
+    width: 80%;
+    height: 350px;
+    margin: 40px auto;
+    align-items: center;
+}
+
+.contact-section {
+    flex: 1;
+    width: 33%;
+    border: 2px solid var(--main);
+    border-radius: 15px;
+}
+
+.contact-section p {
+    padding: 160px 5px;
+    transition: all 0.3s ease;
+}
+
+.contact-section p:hover {
+    color: var(--main);
+    margin: 10px 0px;
+}
+
+.contact-content .email {
+    background-image: url(pics/work1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact-content .phone {
+    background-image: url(pics/work2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact-content .facebook {
+    background-image: url(pics/work3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 1000px) {
+    .contact-container {
+        height: auto;
+    }
+    .contact-content {
+        flex-direction: column;
+    }
+    .contact-section {
+        width: 80%;
+    }
+    .contact-container {
+        height: 1300px;
+    }
+    .contact-section p:hover {
+        font-size: 16px;
+        margin: 0px;
+        padding: 160px 15px;
+    }
 }
 
 @media only screen and (max-width: 915px) {
